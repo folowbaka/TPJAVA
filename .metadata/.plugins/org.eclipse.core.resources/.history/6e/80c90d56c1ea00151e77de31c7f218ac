@@ -1,0 +1,12 @@
+
+public class ElementPile {
+
+	private int entier;
+	private ElementPile ep;
+	
+	public ElementPile()
+	{
+		this.entier=0;
+			
+	}
+}
