@@ -2,7 +2,8 @@
 public class TPmain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Pile p=new Pile();
+		System.out.println(p.isEmpty());
 
 	}
 
