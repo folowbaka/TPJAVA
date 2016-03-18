@@ -1,0 +1,12 @@
+
+public class TRI {
+
+		private Pile pa;
+		private Pile pb;
+		private Pile pc;
+		
+		public static  void tri(Pile a,Pile b,Pile c)
+		{
+			
+		}
+}

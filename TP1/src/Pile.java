@@ -46,7 +46,7 @@ public class Pile {
 			{
 				return true;
 			}
-			else if(taillePile==0 && queue!=null || tete!=null)
+			else if(taillePile==0 && (queue!=null || tete!=null))
 			{
 				System.out.println("Erreur Pile  invalide");
 				return false;
@@ -111,12 +111,13 @@ public class Pile {
 			else
 			{
 				int i=1;
-				while(actuel.getEpsuivant()!=null && i<=this.getTaillePile())
+				while(actuel.getEpsuivant()!=null && i<this.getTaillePile())
 				{
-					s="ElementPile "+i+" : "+actuel.getEntier()+"\n";
+					s=s+"ElementPile "+i+" : "+actuel.getEntier()+"\n";
 					i++;
 					actuel=actuel.getEpsuivant();
 				}
+				s=s+"ElementPile "+i+" : "+actuel.getEntier()+"\n";
 			}
 			return s;
 		}

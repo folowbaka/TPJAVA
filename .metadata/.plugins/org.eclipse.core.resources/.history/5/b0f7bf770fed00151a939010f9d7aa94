@@ -1,0 +1,19 @@
+
+public class TPmain {
+
+	public static void main(String[] args) {
+		Pile pa=new Pile();
+		Pile pb=new Pile();
+		Pile pc=new Pile();
+		int tab[]={4,3,2,5,8,2,6,9,3};
+		for(int i=0;i<tab.length;i++)
+		{
+			pa.empile(tab[i]);
+		}
+		TRI tr=new TRI();
+		tr.tri(pa, pb, pc);
+		System.out.println(pa);
+
+	}
+
+}

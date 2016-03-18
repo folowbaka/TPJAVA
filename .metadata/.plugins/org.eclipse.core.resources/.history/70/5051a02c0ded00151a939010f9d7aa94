@@ -1,0 +1,18 @@
+
+public class TRI {
+
+		private Pile pa;
+		private Pile pb;
+		private Pile pc;
+		
+		public TRI()
+		{
+			this.pa=new Pile();
+			this.pb=new Pile();
+			this.pc=new Pile();
+		}
+		public static void tri(Pile a,Pile b,Pile c)
+		{
+			
+		}
+}

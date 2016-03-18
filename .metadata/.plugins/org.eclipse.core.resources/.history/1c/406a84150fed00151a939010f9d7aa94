@@ -1,0 +1,35 @@
+
+public class TPmain {
+
+	public static void main(String[] args) {
+		Pile pa=new Pile();
+		Pile pb=new Pile();
+		Pile pc=new Pile();
+		pa.empile(1);
+		pa.empile(2);
+		pa.empile(4);
+		pa.empile(3);
+		System.out.println(pa);
+		while(!pa.isEmpty())
+		{
+			if(pb.isEmpty() || pa.getEntierSommet()<pb.getEntierSommet())
+			{
+				pb.empile(pa.depile());
+				if(!pc.isEmpty())
+				{
+					int i=1;
+					while(i<pc.getTaillePile())
+					{
+						pb.empile(pc.depile());
+					}
+				}
+				else
+				{
+					pc.empile(pb.depile());
+				}
+			}
+		}
+
+	}
+
+}

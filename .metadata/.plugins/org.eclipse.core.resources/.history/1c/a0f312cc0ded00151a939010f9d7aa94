@@ -1,0 +1,62 @@
+
+public class TRI {
+
+		private Pile pa;
+		private Pile pb;
+		private Pile pc;
+		
+		public TRI()
+		{
+			this.pa=new Pile();
+			this.pb=new Pile();
+			this.pc=new Pile();
+		}
+		public void setPa(Pile a)
+		{
+			this.pa=a;
+		}
+		public void setPb(Pile b)
+		{
+			this.pb=b;
+		}
+		public void setPc(Pile c)
+		{
+			this.pc=c;
+		}
+		public Pile getPa()
+		{
+			return this.pa;
+		}
+		public Pile getPb()
+		{
+			return this.pa;
+		}
+		public Pile getPa()
+		{
+			return this.pa;
+		}
+		public  void tri(Pile a,Pile b,Pile c)
+		{
+			
+			while(!pa.isEmpty())
+			{
+				if(pb.isEmpty() || pa.getEntierSommet()<pb.getEntierSommet())
+				{
+					pb.empile(pa.depile());
+					if(!pc.isEmpty())
+					{
+						int i=1;
+						while(i<pc.getTaillePile())
+						{
+							pb.empile(pc.depile());
+						}
+					}
+					else
+					{
+						pc.empile(pb.depile());
+					}
+				}
+			}
+		}
+		
+}

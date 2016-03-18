@@ -1,0 +1,45 @@
+
+public class Produit {
+		private String nom;
+		private int prix;
+		private int nbJours;
+		private Produit produitSuivant;
+		
+		
+		public Produit()
+		{
+			this.nom="defaut";
+			this.prix=0;
+			this.nbJours=null;
+			this.produitSuivant=null;
+				
+		}
+		public Produit(String nom,int prix,int nbJours)
+		{
+			this.nom=nom;
+			this.prix=prix;
+			this.nbJours=nbJours;
+			this.produitSuivant=null;
+				
+		}
+		public void setprix(int prix)
+		{
+			this.prix=prix;
+		}
+		public void setjours(int prix)
+		{
+			this.prix=prix;
+		}
+		public void setProduitSuivant(Produit produitSuivant)
+		{
+			this.produitSuivant=produitSuivant;
+		}
+		public int getPrix()
+		{
+			return this.prix;
+		}
+		public Produit getProduitSuivant()
+		{
+			return this.produitSuivant;
+		}
+}

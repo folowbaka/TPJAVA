@@ -1,0 +1,7 @@
+
+public class Produit {
+		private String nom;
+		private int prix;
+		private int nbJours;
+		private Produit ProduitSuivant;
+}

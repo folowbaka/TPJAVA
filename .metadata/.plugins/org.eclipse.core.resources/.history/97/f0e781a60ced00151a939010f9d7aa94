@@ -1,0 +1,7 @@
+
+public class TRI {
+
+		private Pile pa;
+		private Pile pb;
+		Private Pile pc;
+}

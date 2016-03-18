@@ -1,0 +1,41 @@
+
+public class Produit {
+		private String nom;
+		private int prix;
+		private int nbJours;
+		private Produit produitSuivant;
+		
+		
+		public Produit()
+		{
+			this.nom="defaut";
+			this.prix=0;
+			this.nbJours=null;
+			this.produitSuivant=null;
+				
+		}
+		public Produit(String nom,int prix,int nbJours)
+		{
+			this.nom=nom;
+			this.prix=prix;
+			this.nbJours=nbJours;
+			this.produitSuivant=null;
+				
+		}
+		public void setEntier(int entier)
+		{
+			this.entier=entier;
+		}
+		public void setEpsuivant(ElementPile epsuivant)
+		{
+			this.epsuivant=epsuivant;
+		}
+		public int getEntier()
+		{
+			return this.entier;
+		}
+		public ElementPile getEpsuivant()
+		{
+			return this.epsuivant;
+		}
+}

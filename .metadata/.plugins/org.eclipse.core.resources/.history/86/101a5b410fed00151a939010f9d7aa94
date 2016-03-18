@@ -1,0 +1,13 @@
+
+public class TPmain {
+
+	public static void main(String[] args) {
+		Pile pa=new Pile();
+		Pile pb=new Pile();
+		Pile pc=new Pile();
+		int tab[]={4,3,2,5,8,2,6,9,3};
+		System.out.println(pa);
+
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class TPmain {
+
+	public static void main(String[] args) {
+		Pile pa=new Pile();
+		Pile pb=new Pile();
+		Pile pc=new Pile();
+
+	}
+
+}
