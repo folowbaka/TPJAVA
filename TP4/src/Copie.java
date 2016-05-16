@@ -14,7 +14,7 @@ public class Copie {
 		        fos =new BufferedOutputStream (new FileOutputStream(new File(args[1])));
 		        byte[] buf=new byte[8000];
 		
-		        while(fis.read(buf)!=0)
+		        while(fis.read(buf)!=-1)
 				{
 		        	fos.write(buf);
 				}
@@ -44,14 +44,12 @@ public class Copie {
 		}
 		else
 		{
-			
-		}
 		try{
 			Reader in = new InputStreamReader(System.in);
 			do
 			{
 				c=in.read();
-				if(c!=1)
+				if(c!=-1)
 				{
 					System.out.println((char)c); 
 				}
@@ -60,6 +58,7 @@ public class Copie {
 			System.err.print(e.getMessage());
 			System.exit(2);
 		}
+	   }
 	}
 
 }

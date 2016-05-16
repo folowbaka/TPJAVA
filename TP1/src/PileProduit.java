@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PileProduit {
+public  class PileProduit {
 	
 		private int taillePile;
 		private Produit tete;
@@ -168,13 +168,34 @@ public class PileProduit {
 		}
 		public static PileProduit instersection(PileProduit p1,PileProduit p2)
 		{
-			while(p2.isEmpty())
+			PileProduit p2temp=new PileProduit();
+			PileProduit pinterTemp=new PileProduit();
+			PileProduit pinter=new PileProduit();
+			while(!p1.isEmpty())
 			{
-				p1.empile(p2.depile());
+				Produit pr=p1.depile();
+				while(!p2.getTete().equals(pr))
+				{
+					p2temp.empile(p2.depile());
+					
+				}
+				while(!pinter.getTete().equals(pr))
+				{
+					pinterTemp.empile(pinter.depile());
+				}
+				pinter=pinterTemp;
+				if(!p2.isEmpty() && pinter.isEmpty())
+				{
+					pinter.empile(p2.depile());
+				}
+				while(!p2temp.isEmpty())
+				{
+					p2.empile(p2temp.depile());
+				}
+				
 			}
-			p1.tri();
-			p1.suppresion();
-			return p1;
+			
+			return pinter;
 		}
 		public String toString()
 		{

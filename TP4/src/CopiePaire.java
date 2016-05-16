@@ -18,6 +18,7 @@ public class CopiePaire {
 				{
 		        	if(n%2==0)
 		        	Bros.write(line);
+		        	n++;
 				}
 			}catch(FileNotFoundException e)
 			{
